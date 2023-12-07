@@ -8,7 +8,8 @@
 			"extensions": [
 				"vscjava.vscode-java-pack",
 				"GitHub.copilot",
-				"PKief.material-icon-theme"
+				"PKief.material-icon-theme",
+				"mutantdino.resourcemonitor"
 			],
 			"workbench.iconTheme": "material-icon-theme",
 			"editor.formatOnSave": true,
