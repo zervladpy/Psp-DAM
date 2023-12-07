@@ -1,0 +1,19 @@
+{
+	"name": "Psp-DAM",
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"vscjava.vscode-java-pack",
+				"GitHub.copilot",
+				"PKief.material-icon-theme"
+			],
+			"workbench.iconTheme": "material-icon-theme",
+			"editor.formatOnSave": true,
+			"editor.formatOnSaveMode": "file",
+			"editor.formatOnPaste": true
+		}
+	}
+}
