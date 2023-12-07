@@ -1,5 +1,7 @@
 package com.zervladpy;
 
+import java.util.Map;
+
 /**
  * Create a program to show the execution environment of a process with the
  * ProcessBuilder method Map<String,String> environment().
@@ -18,7 +20,9 @@ public class Enviroment {
 
         try {
             pb.inheritIO();
-            pb.environment().forEach((key, value) -> System.out.println(key + " : " + value));
+            for (Map.Entry<String, String> entry : pb.environment().entrySet()) {
+                System.out.println(entry.getKey() + " : " + entry.getValue());
+            }
             pb.start();
         } catch (Exception e) {
             e.printStackTrace();
