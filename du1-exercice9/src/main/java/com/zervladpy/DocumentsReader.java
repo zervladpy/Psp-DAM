@@ -22,7 +22,6 @@ public class DocumentsReader {
     public static void main(String[] args) {
 
         File[] files = new File(INPUT_DIRECTORY).listFiles();
-        String classPath = System.getProperty("java.class.path");
 
         for (File file : files) {
 
@@ -35,6 +34,17 @@ public class DocumentsReader {
                     "/workspaces/Psp-DAM/du1-exercice9/src/main/java/com/zervladpy/Calculate.java",
                     file.getPath(), OUTPUT_FILE
             };
+
+            /*
+             * With classPath:
+             * 
+             * String classPath = System.getProperty("java.class.path");
+             * 
+             * String[] commands = {
+             * "java", "-cp", classPath, "main.java.com.zervladpy.Calculate
+             * file.getPath(), OUTPUT_FILE
+             * };
+             */
 
             pb.command(commands);
 
