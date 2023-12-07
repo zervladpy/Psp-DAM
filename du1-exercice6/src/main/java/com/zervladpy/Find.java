@@ -23,7 +23,6 @@ public class Find {
 
         String[] command = { "find", file, "-type", "f", "-exec", "grep", "-c", text, "{}", ";" };
 
-        // count how many times the text appears in the file
         ProcessBuilder pb = new ProcessBuilder(command);
         pb.redirectOutput(new File(result));
 
