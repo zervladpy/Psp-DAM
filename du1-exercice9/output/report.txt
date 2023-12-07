@@ -5,3 +5,10 @@ file: /workspaces/Psp-DAM/du1-exercice9/input/departments/department108.txt repo
 file: /workspaces/Psp-DAM/du1-exercice9/input/departments/department106.txt report: -29874593.72
 file: /workspaces/Psp-DAM/du1-exercice9/input/departments/department105.txt report: -2902057.91
 file: /workspaces/Psp-DAM/du1-exercice9/input/departments/department107.txt report: 3081871008.55
+file: /workspaces/Psp-DAM/du1-exercice9/input/departments/department101.txt report: -17700363.41
+file: /workspaces/Psp-DAM/du1-exercice9/input/departments/department108.txt report: -44008133.39
+file: /workspaces/Psp-DAM/du1-exercice9/input/departments/department106.txt report: -29874593.72
+file: /workspaces/Psp-DAM/du1-exercice9/input/departments/department107.txt report: 3081871008.55
+file: /workspaces/Psp-DAM/du1-exercice9/input/departments/department105.txt report: -2902057.91
+file: /workspaces/Psp-DAM/du1-exercice9/input/departments/department103.txt report: -109031607.43
+file: /workspaces/Psp-DAM/du1-exercice9/input/departments/department102.txt report: -118644799.58

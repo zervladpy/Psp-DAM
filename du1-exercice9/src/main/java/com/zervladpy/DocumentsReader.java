@@ -1,9 +1,6 @@
 package com.zervladpy;
 
 import java.io.File;
-import java.util.List;
-import java.io.InputStream;
-import java.io.OutputStream;
 
 /**
  * Make a program that goes through all the files in the departments directory
