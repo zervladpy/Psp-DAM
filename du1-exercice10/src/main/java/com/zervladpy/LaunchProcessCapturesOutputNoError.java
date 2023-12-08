@@ -1,0 +1,52 @@
+package com.zervladpy;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.util.Arrays;
+
+/**
+ * Read the code of the program LaunchesProcessCapturesOutput.java and execute
+ * it correctly and with errors.
+ *
+ */
+public class LaunchProcessCapturesOutputNoError {
+    public static void main(String[] args) {
+        if (args.length <= 0) {
+            System.out.println("The command to execute must be specified.");
+            System.exit(1);
+        }
+
+        ProcessBuilder pb = new ProcessBuilder(args);
+        try {
+            Process p = pb.start();
+            try (InputStream is = p.getInputStream();
+                    InputStreamReader isr = new InputStreamReader(is);
+                    BufferedReader br = new BufferedReader(isr)) {
+                int codRet = p.waitFor();
+                System.out.println("Execution of " + Arrays.toString(args)
+                        + " returns " + codRet
+                        + " " + (codRet == 0 ? "(correct execution)" : "(ERROR)"));
+                System.out.println("Output of the process");
+                System.out.println("------------------");
+                String linea = null;
+                while ((linea = br.readLine()) != null) {
+                    System.out.println(linea);
+                }
+                System.out.println("------------------");
+            }
+        } catch (IOException e) {
+            System.err.println("Error during the process execution");
+            System.err.println("Detailed information");
+            System.err.println("---------------------");
+            e.printStackTrace();
+            System.err.println("---------------------");
+            System.exit(2);
+        } catch (InterruptedException ex) {
+            System.err.println("Interrupted process");
+            System.exit(3);
+        }
+
+    }
+}

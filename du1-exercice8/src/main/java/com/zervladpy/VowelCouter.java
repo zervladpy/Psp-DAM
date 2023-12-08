@@ -1,4 +1,4 @@
-package main.java.com.zervladpy;
+package com.zervladpy;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
