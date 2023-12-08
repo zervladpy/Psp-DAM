@@ -1,6 +1,5 @@
 package com.zervladpy;
 
-import java.util.Scanner;
 import java.lang.StringBuilder;
 
 /**
