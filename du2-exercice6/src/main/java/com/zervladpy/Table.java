@@ -1,8 +1,7 @@
-package main.java.com.zervladpy;
+package com.zervladpy;
 
 import java.util.ArrayList;
 import java.util.List;
-import com.zervladpy.*;
 
 public class Table {
 

@@ -1,4 +1,4 @@
-package main.java.com.zervladpy;
+package com.zervladpy;
 
 public enum Material {
 

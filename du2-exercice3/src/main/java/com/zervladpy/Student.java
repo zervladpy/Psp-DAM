@@ -1,10 +1,9 @@
-package main.java.com.zervladpy;
+package com.zervladpy;
 
 import java.util.List;
 import java.util.Random;
 import java.lang.Runnable;
 import java.lang.Thread;
-import com.zervladpy.Book;
 
 public class Student implements Runnable {
 

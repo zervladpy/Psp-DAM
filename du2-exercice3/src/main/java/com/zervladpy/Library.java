@@ -3,9 +3,6 @@ package com.zervladpy;
 import java.util.ArrayList;
 import java.util.List;
 
-import main.java.com.zervladpy.Book;
-import main.java.com.zervladpy.Student;
-
 /**
  * There are four students sharing nine books. The books can be stored in an
  * array. The students select two books at random and, once obtained, use them

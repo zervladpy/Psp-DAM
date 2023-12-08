@@ -2,7 +2,7 @@ package com.zervladpy;
 
 import java.util.Random;
 
-import main.java.com.zervladpy.HiddenNumber;
+import com.zervladpy.HiddenNumber;
 
 /**
  * We want to create a multithreading application.
@@ -29,9 +29,9 @@ public class Guesser {
 
     public static void main(String[] args) {
 
-        HiddenNumber hiddenNumber = new HiddenNumber(MIN_VALUE, MAX_VALUE);
+        final HiddenNumber hiddenNumber = new HiddenNumber(MIN_VALUE, MAX_VALUE);
 
-        Random random = new Random();
+        final Random random = new Random();
 
         for (int i = 0; i < N_THREADS; i++) {
 

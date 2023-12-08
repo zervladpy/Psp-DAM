@@ -1,9 +1,6 @@
-package main.java.com.zervladpy;
+package com.zervladpy;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.lang.Runnable;
-import main.java.com.zervladpy.*;
 
 public class Smoker implements Runnable {
 

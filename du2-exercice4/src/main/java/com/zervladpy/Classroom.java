@@ -2,9 +2,6 @@ package com.zervladpy;
 
 import java.util.Random;
 
-import main.java.com.zervladpy.Greeting;
-import main.java.com.zervladpy.Person;
-
 /**
  * We want to create a multithreaded application.
  * 

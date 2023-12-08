@@ -1,9 +1,5 @@
 package com.zervladpy;
 
-import main.java.com.zervladpy.MailBox;
-import main.java.com.zervladpy.Postman;
-import main.java.com.zervladpy.Collector;
-
 /**
  * Suppose we want to implement a synchronized application with a Mailbox class
  * that allows one thread to deposit a message and another thread to pick it up.

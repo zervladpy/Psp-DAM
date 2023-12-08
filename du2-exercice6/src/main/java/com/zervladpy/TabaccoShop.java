@@ -1,10 +1,5 @@
 package com.zervladpy;
 
-import main.java.com.zervladpy.Seller;
-import main.java.com.zervladpy.Table;
-import main.java.com.zervladpy.Smoker;
-import main.java.com.zervladpy.Material;
-
 /**
  * Consider a tobacco shop with three smokers and a tobacconist.
  * 

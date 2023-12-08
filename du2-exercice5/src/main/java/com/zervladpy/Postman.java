@@ -1,4 +1,4 @@
-package main.java.com.zervladpy;
+package com.zervladpy;
 
 import java.util.Random;
 import java.lang.Runnable;
