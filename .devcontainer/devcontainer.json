@@ -9,7 +9,8 @@
 				"vscjava.vscode-java-pack",
 				"GitHub.copilot",
 				"PKief.material-icon-theme",
-				"mutantdino.resourcemonitor"
+				"mutantdino.resourcemonitor",
+				"redhat.java"
 			],
 			"workbench.iconTheme": "material-icon-theme",
 			"editor.formatOnSave": true,
