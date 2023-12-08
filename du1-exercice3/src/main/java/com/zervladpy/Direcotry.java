@@ -6,30 +6,30 @@ import java.util.Scanner;
 public class Direcotry {
     public static void main(String[] args) {
 
-        Scanner input = new Scanner(System.in);
+        try (Scanner input = new Scanner(System.in)) {
+            System.out.println("Enter a directory path: ");
+            String directoryPath = input.nextLine();
 
-        System.out.println("Enter a directory path: ");
-        String directoryPath = input.nextLine();
+            ProcessBuilder pb = new ProcessBuilder();
 
-        ProcessBuilder pb = new ProcessBuilder();
+            String[] commands = { "ls", "-la" };
 
-        String[] commands = { "ls", "-la" };
+            if (directoryPath.isEmpty()) {
+                directoryPath = System.getProperty("user.dir");
+            }
 
-        if (directoryPath.isEmpty()) {
-            directoryPath = System.getProperty("user.dir");
-        }
+            File processDirectory = new File(directoryPath);
 
-        File processDirectory = new File(directoryPath);
+            pb.command(commands);
+            pb.directory(processDirectory);
 
-        pb.command(commands);
-        pb.directory(processDirectory);
-
-        try {
-            pb.inheritIO();
-            pb.start();
-            System.out.println("Process Directory: " + pb.directory().getAbsolutePath());
-        } catch (Exception e) {
-            e.printStackTrace();
+            try {
+                pb.inheritIO();
+                pb.start();
+                System.out.println("Process Directory: " + pb.directory().getAbsolutePath());
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
 
     }
