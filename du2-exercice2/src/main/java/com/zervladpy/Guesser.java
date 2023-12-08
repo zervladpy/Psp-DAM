@@ -54,9 +54,7 @@ public class Guesser {
                         } else if (guessResult == -1) {
                             break;
                         }
-
                     }
-
                 }
             };
 
