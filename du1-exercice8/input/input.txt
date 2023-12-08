@@ -1,0 +1,4 @@
+ProcessBuilder class is used to create operating system processes.
+Each ProcessBuilder instance manages a collection of process attributes.
+The start() method creates a new Process instance with those attributes.
+The start() method can be invoked repeatedly from the same instance to create new subprocesses with identical or related attributes.

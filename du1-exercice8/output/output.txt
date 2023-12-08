@@ -1,0 +1,6 @@
+Number of A: 23
+Number of E: 45
+Number of I: 16
+Number of O: 18
+Number of U: 7
+Total number of vowels: 109
