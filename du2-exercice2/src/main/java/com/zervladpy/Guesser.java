@@ -2,8 +2,6 @@ package com.zervladpy;
 
 import java.util.Random;
 
-import com.zervladpy.HiddenNumber;
-
 /**
  * We want to create a multithreading application.
  * 
