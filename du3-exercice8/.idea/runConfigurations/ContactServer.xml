@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="ContactServer" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="server.ContactServer" />
+    <module name="du3-exercice8" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
